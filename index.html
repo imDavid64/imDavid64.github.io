@@ -1,22 +1,381 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Portafolio profesional de Argenis David Cerrato Amador, estudiante de Ingeniería en Sistemas orientado a IT Support, Software Development y Business Operations." />
+    <meta name="author" content="Argenis David Cerrato Amador" />
+    <meta property="og:title" content="Argenis David Cerrato Amador | Portfolio" />
+    <meta property="og:description" content="IT Support, Software Development, Systems and Business Operations." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://imdavid64.github.io/" />
+    <title>Argenis David Cerrato Amador | Portfolio</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div>
-            <a class="logo-header" href="index.html">Argenis David Cerrato Amador</a>
-        </div>
-    </header>
-</body>
-<footer>
+    <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido principal</a>
 
-</footer>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand brand-lockup" href="#home" aria-label="Argenis David Cerrato Amador">
+                    <span class="brand-mark" aria-hidden="true">AD</span>
+                    <span class="brand-text">
+                        <span>Argenis David</span>
+                        <small data-i18n="nav.role">Systems Engineering</small>
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"
+                                data-i18n="nav.experience">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-cta" href="cv.html">
+                                <i class="bi bi-file-earmark-person-fill" aria-hidden="true"></i>
+                                <span data-i18n="nav.cv">CV</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="language-switch" role="group" aria-label="Language selector">
+                                <button class="lang-btn active" type="button" data-lang="es"
+                                    aria-pressed="true">ES</button>
+                                <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero-section section-pad">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 reveal">
+                        <p class="eyebrow" data-i18n="hero.eyebrow">Portafolio profesional</p>
+                        <h1>Argenis David Cerrato Amador</h1>
+                        <p class="hero-title" data-i18n="hero.title">Systems Engineering Student | IT Support |
+                            Software Development</p>
+                        <p class="hero-copy" data-i18n="hero.copy">Estudiante de último año con experiencia práctica en
+                            sistemas web, bases de datos, soporte a clientes y operaciones administrativas. Busco
+                            oportunidades entry-level donde pueda aportar resolución de problemas, aprendizaje constante
+                            y trabajo en equipo.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#projects">
+                                <i class="bi bi-grid-1x2-fill" aria-hidden="true"></i>
+                                <span data-i18n="hero.projectsCta">Ver proyectos</span>
+                            </a>
+                            <a class="btn btn-outline-light" href="#contact">
+                                <i class="bi bi-send-fill" aria-hidden="true"></i>
+                                <span data-i18n="hero.contactCta">Contactar</span>
+                            </a>
+                            <a class="btn btn-ghost" href="cv.html">
+                                <i class="bi bi-file-earmark-person-fill" aria-hidden="true"></i>
+                                <span data-i18n="hero.cvCta">Ver CV</span>
+                            </a>
+                        </div>
+                        <div class="quick-links" aria-label="Professional links">
+                            <a href="#" data-contact="email" data-contact-label="email">Email</a>
+                            <a href="https://www.linkedin.com/in/argenis-david-cerrato-amador/" target="_blank"
+                                rel="noopener">LinkedIn</a>
+                            <a href="https://github.com/imDavid64" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 reveal">
+                        <div class="profile-panel" aria-label="Profile summary">
+                            <div class="panel-top">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="profile-mark" aria-hidden="true">AD</div>
+                            <div class="terminal-lines" aria-hidden="true">
+                                <span><strong>role:</strong> entry-level IT / developer</span>
+                                <span><strong>focus:</strong> support, systems, web</span>
+                                <span><strong>stack:</strong> Java, PHP, SQL, JS</span>
+                            </div>
+                            <div class="metric-row">
+                                <div><strong>2026</strong><span data-i18n="hero.grad">Graduación estimada</span></div>
+                                <div><strong>B2</strong><span data-i18n="hero.english">Inglés</span></div>
+                                <div><strong>4+</strong><span data-i18n="hero.projects">Proyectos sólidos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-pad">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow" data-i18n="about.eyebrow">Sobre mí</p>
+                    <h2 data-i18n="about.title">Perfil profesional</h2>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-lg-7 reveal">
+                        <div class="content-block">
+                            <p data-i18n="about.copy1">Soy estudiante de último año de Ingeniería en Sistemas de
+                                Computación en Universidad Fidélitas, con experiencia práctica en bases de datos,
+                                sistemas web y operaciones administrativas.</p>
+                            <p data-i18n="about.copy2">Me interesa crecer en posiciones entry-level de IT Support,
+                                Software Development, Systems, Backend, Frontend o Business Operations, combinando una
+                                mentalidad técnica con comunicación clara y orientación al servicio.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 reveal">
+                        <div class="highlight-list">
+                            <div><i class="bi bi-check2-circle" aria-hidden="true"></i><span
+                                    data-i18n="about.point1">Resolución de problemas y troubleshooting básico</span>
+                            </div>
+                            <div><i class="bi bi-check2-circle" aria-hidden="true"></i><span
+                                    data-i18n="about.point2">Comunicación con clientes y equipos de trabajo</span></div>
+                            <div><i class="bi bi-check2-circle" aria-hidden="true"></i><span
+                                    data-i18n="about.point3">Organización, adaptabilidad y aprendizaje continuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-pad section-muted">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow" data-i18n="experience.eyebrow">Trayectoria</p>
+                    <h2 data-i18n="experience.title">Experiencia laboral</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date" data-i18n="experience.job1.date">2021 - Presente</div>
+                        <div class="timeline-card">
+                            <h3 data-i18n="experience.job1.role">Administrative Assistant</h3>
+                            <p class="muted">Veterinaria Dra. Huellitas</p>
+                            <ul>
+                                <li data-i18n="experience.job1.a">Soporte directo a clientes y coordinación de
+                                    comunicación entre personal y clientes.</li>
+                                <li data-i18n="experience.job1.b">Gestión de registros digitales y físicos, facturación
+                                    y apoyo en operaciones diarias.</li>
+                                <li data-i18n="experience.job1.c">Resolución básica de problemas en sistemas y procesos
+                                    internos.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-date">2017 - 2020</div>
+                        <div class="timeline-card">
+                            <h3 data-i18n="experience.job2.role">Industrial Machine Operator</h3>
+                            <p class="muted">Grupo Leisa</p>
+                            <ul>
+                                <li data-i18n="experience.job2.a">Operación y configuración de maquinaria industrial.
+                                </li>
+                                <li data-i18n="experience.job2.b">Revisión preventiva, troubleshooting básico y control
+                                    de calidad.</li>
+                                <li data-i18n="experience.job2.c">Apoyo en inducción de nuevos colaboradores.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-pad">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6 reveal">
+                        <div class="info-panel">
+                            <p class="eyebrow" data-i18n="education.eyebrow">Educación</p>
+                            <h2 data-i18n="education.degree">Ingeniería en Sistemas de Computación</h2>
+                            <p class="muted">Universidad Fidélitas | 2023 - 2026</p>
+                            <p data-i18n="education.status">Bachelor's Degree in Systems Engineering, en progreso.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 reveal">
+                        <div class="info-panel">
+                            <p class="eyebrow" data-i18n="certs.eyebrow">Certificaciones</p>
+                            <div class="cert-list">
+                                <span data-i18n="certs.wp">Certificate of Completion WordPress Credits - WordPress |
+                                    2026</span>
+                                <span data-i18n="certs.english">Advanced English Diploma - Academia Europea |
+                                    2026</span>
+                                <span>Scrum Fundamentals Certified - SCRUMstudy | 2024</span>
+                                <span>CCNA: Switching, Routing and Wireless Essentials - Cisco Networking Academy |
+                                    2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-pad section-muted">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow" data-i18n="skills.eyebrow">Capacidades</p>
+                    <h2 data-i18n="skills.title">Skills técnicos y profesionales</h2>
+                </div>
+                <div class="skill-grid reveal" aria-label="Skills">
+                    <div>
+                        <h3 data-i18n="skills.tech">Técnicos</h3>
+                        <div class="chip-group">
+                            <span>Java</span><span>PHP</span><span>.NET</span><span>SQL</span><span>MySQL</span>
+                            <span>Oracle</span><span>SQL Server</span><span>JavaScript</span><span>HTML</span>
+                            <span>CSS</span><span>Bootstrap</span><span>Laravel</span><span>REST APIs</span>
+                            <span>GitHub</span><span>VS Code</span><span>Windows</span><span>Linux</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 data-i18n="skills.soft">Profesionales</h3>
+                        <div class="chip-group soft">
+                            <span data-i18n="skills.customer">Servicio al cliente</span>
+                            <span data-i18n="skills.problem">Resolución de problemas</span>
+                            <span data-i18n="skills.comm">Comunicación</span>
+                            <span data-i18n="skills.team">Trabajo en equipo</span>
+                            <span data-i18n="skills.adapt">Adaptabilidad</span>
+                            <span data-i18n="skills.org">Organización</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 data-i18n="skills.languages">Idiomas</h3>
+                        <div class="language-card">
+                            <span data-i18n="skills.spanish">Español: Nativo</span>
+                            <span data-i18n="skills.english">Inglés: B2 / Upper Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-pad">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow" data-i18n="projects.eyebrow">Trabajo académico</p>
+                    <h2 data-i18n="projects.title">Proyectos destacados</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i></div>
+                        <h3>Huellitas Digital</h3>
+                        <p data-i18n="projects.huellitas">Sistema web para veterinaria con venta de productos, carrito,
+                            gestión de usuarios, clientes, mascotas, citas, servicios, stock, pedidos, pagos, roles,
+                            notificaciones e imágenes.</p>
+                        <div class="chip-group compact">
+                            <span>PHP</span><span>MySQL</span><span>MVC</span><span>Bootstrap</span><span>Firebase
+                                Storage</span>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="bi bi-people-fill" aria-hidden="true"></i></div>
+                        <h3 data-i18n="projects.tcu.title">Sistema para TCU</h3>
+                        <p data-i18n="projects.tcu">Sistema para organización sin fines de lucro orientado a gestión de
+                            beneficiarios, inventario, asistencia, pagos mensuales, recibos y bitácora de eventos.</p>
+                        <div class="chip-group compact">
+                            <span>Laravel</span><span>Breeze</span><span>MySQL</span><span>Auth</span><span>Roles</span>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="bi bi-database-fill-gear" aria-hidden="true"></i></div>
+                        <h3 data-i18n="projects.oracle.title">Oracle y Java</h3>
+                        <p data-i18n="projects.oracle">Sistemas académicos con Oracle, PL/SQL, paquetes, triggers,
+                            secuencias, SYS_REFCURSOR, Java Swing, MVC, POJOs y conexión Java-Oracle.</p>
+                        <div class="chip-group compact">
+                            <span>Oracle</span><span>PL/SQL</span><span>Java Swing</span><span>MVC</span>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="bi bi-bar-chart-line-fill" aria-hidden="true"></i></div>
+                        <h3 data-i18n="projects.powerbi.title">Power BI y documentación</h3>
+                        <p data-i18n="projects.powerbi">Reportes, gráficos, fact tables, documentación técnica APA/IEEE
+                            y diseño lógico/físico de bases de datos.</p>
+                        <div class="chip-group compact">
+                            <span>Power BI</span><span>Data Modeling</span><span>APA</span><span>IEEE</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="section-pad cv-band">
+            <div class="container reveal">
+                <div class="cv-content">
+                    <div>
+                        <p class="eyebrow" data-i18n="cv.eyebrow">CV</p>
+                        <h2 data-i18n="cv.title">Currículum listo para revisar</h2>
+                        <p data-i18n="cv.copy">Consulta una versión estática y bilingüe del CV, compatible con GitHub
+                            Pages y fácil de imprimir como PDF desde el navegador.</p>
+                    </div>
+                    <div class="cv-actions">
+                        <a class="btn btn-primary" href="cv.html">
+                            <i class="bi bi-eye-fill" aria-hidden="true"></i>
+                            <span data-i18n="cv.view">Visualizar CV</span>
+                        </a>
+                        <a class="btn btn-outline-light" href="cv.html">
+                            <i class="bi bi-download" aria-hidden="true"></i>
+                            <span data-i18n="cv.download">Descargar PDF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-pad">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+                    <h2 data-i18n="contact.title">Hablemos de oportunidades</h2>
+                </div>
+                <div class="contact-grid reveal">
+                    <a href="#" data-contact="email">
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                        <span>Email</span>
+                        <strong data-contact-label="email" style="font-size: 14px;">Email disponible</strong>
+                    </a>
+                    <a href="#" data-contact="phone">
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        <span data-i18n="contact.phone">Teléfono</span>
+                        <strong data-contact-label="phone" style="font-size: 14px;">Teléfono disponible</strong>
+                    </a>
+                    <a href="https://www.linkedin.com/in/argenis-david-cerrato-amador/" target="_blank" rel="noopener">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                        <strong style="font-size: 14px;">argenis-david-cerrato-amador</strong>
+                    </a>
+                    <a href="https://github.com/imDavid64" target="_blank" rel="noopener">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                        <strong style="font-size: 14px;">imDavid64</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="currentYear">2026</span> Argenis David Cerrato Amador.</p>
+            <a href="#home" data-i18n="footer.top">Volver arriba</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
